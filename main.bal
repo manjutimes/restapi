@@ -20,4 +20,9 @@ service / on new http:Listener(9090) {
         albums.add(album);
         return album;
     }
+
+     resource function put albums(Album album) returns Album {
+        albums.add(album);
+        return album;
+    }
 }
