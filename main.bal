@@ -6,8 +6,10 @@ type Album readonly & record {|
 |};
 
 table<Album> key(title) albums = table [
-    {title: "Blue Train", artist: "John Coltrane"},
-    {title: "Jeru", artist: "Gerry Mulligan"}
+    {title: "Front End", artist: "HTML/JavaScript"},
+    {title: "Athentication", artist: "Asgardeo"},
+    {title: "API/Backend Logic", artist: "Ballerina"},
+     {title: "Integrated with", artist: "Connection"}
 ];
 
 service / on new http:Listener(9090) {
